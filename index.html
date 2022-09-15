@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styel.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background: black;
+    background-image: url(1111.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+/* slider */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 25px solid forestgreen;
+    box-shadow: 2px 2px 3em white;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 300px;
+    width: 300px;   
+    border-radius: 50%;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: 7s infinite item;
+}
+@keyframes item{
+  0%{
+      transform: translateX(350px);
+  }
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 60px;
+    color: chartreuse;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Cinzel Decorative', cursive;
+}
+/* contacte */
+.contacte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 130px;
+    background: none;
+    border: none;
+}
+/* social */
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.rsx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 80px;
+    border: none;
+    color: tomato;
+    animation: 4s infinite rsx;
+}
+@keyframes rsx{
+    25%{
+        transform: translateY(50px);
+        background: whitesmoke;
+        border-radius: 50%;
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-50px);
+        
+    }
+}
+    </style>
+
+    <!-- title -->
+    <div class="title">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Cinzel+Decorative&family=Cookie&family=El+Messiri&family=IM+Fell+DW+Pica+SC&family=Pacifico&family=Rajdhani:wght@400;500&family=Schoolbell&family=Square+Peg&family=Tapestry&display=swap');
+            </style>
+     <h1 class="h1">Menu Pizza</h1>
+    </div>
+
+
+    <!-- slider menu -->
+        <div class="container">
+            <div class="slider">
+                <div class="menu">
+                    <div class="item"><img class="img" src="1.png" alt=""></div>
+                    <div class="item"><img class="img" src="2.png" alt=""></div>
+                    <div class="item"><img class="img" src="3.png" alt=""></div>
+                    <div class="item"><img class="img" src="4.png" alt=""></div>
+                    <div class="item"><img class="img" src="5.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contacte -->
+        <div class="contacte">
+         <div class="cont">
+           <button class="btn"><img src="https://img.icons8.com/ios-filled/64/7fff00/phone.png"/></button>
+           <button class="btn"><img src="https://img.icons8.com/ios-filled/64/7fff00/secured-letter--v1.png"/></button>
+           <button class="btn"><img src="https://img.icons8.com/pastel-glyph/64/7fff00/worldwide-location--v2.png"/></button>
+         </div>
+        </div>
+        <!-- social -->
+        <div class="social">
+          <div class="link">
+              <button class="rsx"><img src="https://img.icons8.com/ios-filled/64/ff6347/facebook-new.png"/></button>
+              <button class="rsx"><img src="https://img.icons8.com/ios-filled/64/ff6347/instagram-new--v1.png"/></button>
+              <button class="rsx"><img src="https://img.icons8.com/ios-filled/64/ff6347/tiktok--v1.png"/></button>
+              <button class="rsx"><img src="https://img.icons8.com/ios-filled/68/ff6347/youtube-play.png"/></button>
+              <button class="rsx"><img src="https://img.icons8.com/ios-filled/64/ff6347/twitter.png"/></button>
+          </div>
+        </div>
+</body>
+</html>
